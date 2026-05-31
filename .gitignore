@@ -1,40 +1,43 @@
-# Built application files
-/*/build/
-/build
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
-# Crashlytics configuations
-com_crashlytics_export_strings.xml
+# dependencies
+node_modules/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
 
-# Gradle generated files
-.gradle/
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
 
-# Signing files
-.signing/
+# Metro
+.metro-health-check*
 
-# User-specific configurations
-.idea/gradle.xml
-.idea/runConfigurations.xml
-.idea/libraries/
-.idea/workspace.xml
-.idea/tasks.xml
-.idea/.name
-.idea/compiler.xml
-.idea/copyright/profiles_settings.xml
-.idea/encodings.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/scopes/scope_settings.xml
-.idea/vcs.xml
-*.iml
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 
-# OS-specific files
+# macOS
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+example
+
+# generated native folders
+/ios
+/android
